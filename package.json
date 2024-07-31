@@ -1,0 +1,40 @@
+{
+    "name": "salesforce-developer-shortcuts",
+    "version": "1.0.0",
+    "description": "A Chrome Extension for Salesforce Developers to add handy shortcuts.",
+    "main": "background.js",
+    "scripts": {
+        "test": "xo"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mccheesy/salesforce-developer-shortcuts.git"
+    },
+    "keywords": [
+        "salesforce",
+        "SFDX",
+        "developer"
+    ],
+    "author": "James D McCleese <jmccleese@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mccheesy/salesforce-developer-shortcuts/issues"
+    },
+    "homepage": "https://github.com/mccheesy/salesforce-developer-shortcuts#readme",
+    "devDependencies": {
+        "xo": "^0.52.3"
+    },
+    "xo": {
+      "env": [
+        "webextensions"
+      ],
+      "rules": {
+        "comma-dangle": [
+			"error",
+			"always-multiline"
+		]
+      },
+      "semicolon": false,
+      "space": 4
+    }
+}

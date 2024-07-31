@@ -1,0 +1,60 @@
+{
+    "name": "Salesforce Developer Shortcuts",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://*.salesforce.com/",
+        "https://*.force.com/"
+    ],
+    "action": {
+        "default_icon": {
+            "128": "icons/128.png",
+            "16": "icons/16.png",
+            "48": "icons/48.png"
+        },
+        "default_title": "Open Salesforce Developer Console for the current Org"
+    },
+    "commands": {
+        "open_console_action": {
+            "description": "Open Salesforce Developer Console for the current Org",
+            "suggested_key": {
+                "chromeos": "Ctrl+Shift+D",
+                "linux": "Ctrl+Shift+D",
+                "mac": "Ctrl+Shift+D",
+                "windows": "Ctrl+Shift+D"
+            }
+        },
+        "open_object_manager_action": {
+            "description": "Open Salesforce Object Manager for the current object",
+            "suggested_key": {
+                "chromeos": "Ctrl+Shift+O",
+                "linux": "Ctrl+Shift+O",
+                "mac": "Ctrl+Shift+O",
+                "windows": "Ctrl+Shift+O"
+            }
+        },
+        "open_setup_action": {
+            "description": "Open Salesforce Setup for the current Org",
+            "suggested_key": {
+                "chromeos": "Ctrl+Shift+S",
+                "linux": "Ctrl+Shift+S",
+                "mac": "Ctrl+Shift+S",
+                "windows": "Ctrl+Shift+S"
+            }
+        }
+    },
+    "description": "Provides helpful Salesforce developer keyboard shortcuts",
+    "icons": {
+        "128": "icons/128.png",
+        "16": "icons/16.png",
+        "48": "icons/48.png"
+    },
+    "update_url": "https://clients2.google.com/service/update2/crx"
+}
